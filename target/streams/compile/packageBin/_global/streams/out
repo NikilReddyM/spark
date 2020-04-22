@@ -1,0 +1,13 @@
+[debug] Packaging C:\Users\SIT-100120\Desktop\spark\spark-1\target\scala-2.12\spark-1_2.12-0.1.jar ...
+[debug] Input file mappings:
+[debug] 	data
+[debug] 	  C:\Users\SIT-100120\Desktop\spark\spark-1\target\scala-2.12\classes\data
+[debug] 	data\movies.json
+[debug] 	  C:\Users\SIT-100120\Desktop\spark\spark-1\target\scala-2.12\classes\data\movies.json
+[debug] 	part_1
+[debug] 	  C:\Users\SIT-100120\Desktop\spark\spark-1\target\scala-2.12\classes\part_1
+[debug] 	part_1\read_csv_file$.class
+[debug] 	  C:\Users\SIT-100120\Desktop\spark\spark-1\target\scala-2.12\classes\part_1\read_csv_file$.class
+[debug] 	part_1\read_csv_file.class
+[debug] 	  C:\Users\SIT-100120\Desktop\spark\spark-1\target\scala-2.12\classes\part_1\read_csv_file.class
+[debug] Done packaging.
