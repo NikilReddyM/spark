@@ -14,7 +14,7 @@ object read_csv_file
     //val dataDF = spark.read.json("src/main/resources/data/movies.json")
     //dataDF.show(10)
 
-    spark.conf.getAll.foreach(println)
+    spark.conf.getAll.foreach(println)//prints all spark configuration parameters
 
   }
 
