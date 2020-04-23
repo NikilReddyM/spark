@@ -2,7 +2,6 @@ package part_1
 
 import org.apache.spark.sql.SparkSession
 
-
 object print_sparkconfig
 {
   def main(args: Array[String]): Unit = {
@@ -11,11 +10,8 @@ object print_sparkconfig
       .config("spark.master","local")
       .getOrCreate()
 
-    //val dataDF = spark.read.json("src/main/resources/data/movies.json")
-    //dataDF.show(10)
-
-    spark.conf.getAll.foreach(println)//prints all spark configuration parameters
-
+    val dataDF = spark.read.json("src/main/resources/data/movies.json")
+    dataDF.show(10)
+    //spark.conf.getAll.foreach(println)//prints all spark configuration parameters
   }
-
 }
