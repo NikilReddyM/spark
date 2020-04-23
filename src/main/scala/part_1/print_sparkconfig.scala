@@ -10,7 +10,7 @@ object print_sparkconfig
       .config("spark.master","local")
       .getOrCreate()
 
-    val dataDF = spark.read.json("src/main/resources/data/movies.json")
+    val dataDF = spark.read.json(args(0))
     dataDF.show(10)
     //spark.conf.getAll.foreach(println)//prints all spark configuration parameters
   }
