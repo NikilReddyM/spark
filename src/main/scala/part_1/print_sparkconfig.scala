@@ -7,7 +7,7 @@ object print_sparkconfig
   def main(args: Array[String]): Unit = {
     val spark = SparkSession.builder()
       .appName("project-1")
-      .config("spark.master","local")
+      //.config("spark.master","local")
       .getOrCreate()
 
     val dataDF = spark.read.json(args(0))
