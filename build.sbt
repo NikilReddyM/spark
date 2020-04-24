@@ -6,6 +6,12 @@ scalaVersion := "2.12.10"
 
 val sparkVersion = "2.4.2"
 
+resolvers ++= Seq(
+  "bintray-spark-packages" at "https://dl.bintray.com/spark-packages/maven",
+  "Typesafe Simple Repository" at "https://repo.typesafe.com/typesafe/simple/maven-releases",
+  "MavenRepository" at "https://mvnrepository.com"
+)
+
 libraryDependencies ++= Seq(
   // saprk core and spark sql
   "org.apache.spark" %% "spark-core" % sparkVersion,
