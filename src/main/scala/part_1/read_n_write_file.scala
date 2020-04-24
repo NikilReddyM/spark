@@ -6,7 +6,7 @@ object read_n_write_file {
   def main(args:Array[String]):Unit={
     val spark = SparkSession.builder()
       .appName("read_n_write_file")
-      .config("spark.master","local")
+      //.config("spark.master","local")
       .getOrCreate()
 
     val dataDF = spark.read.json(args(0))
